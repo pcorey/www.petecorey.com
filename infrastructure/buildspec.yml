@@ -14,5 +14,7 @@ artifacts:
   name: "BuildOutput"
   files:
     - "**/*"
+  exclude-paths:
+    - "infrastructure/*"
   base-directory: _site
     
