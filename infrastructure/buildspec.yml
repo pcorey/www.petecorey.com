@@ -1,0 +1,17 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      ruby: latest
+  build:
+    commands:
+      - gem install jekyll bundler
+      - echo Starting build
+      - bundle exec jekyll
+      - echo Build finished
+artifacts:
+  name: "BuildOutput"
+  files:
+    - "**/*"
+  base-directory: _site
+    
