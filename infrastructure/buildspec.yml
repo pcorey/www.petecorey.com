@@ -6,9 +6,9 @@ phases:
   build:
     commands:
       - gem install jekyll bundler
+      - bundle install
       - echo Starting build
       - bundle exec jekyll
-      - bundle install
       - echo Build finished
 artifacts:
   name: "BuildOutput"
