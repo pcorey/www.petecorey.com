@@ -17,4 +17,3 @@ artifacts:
   exclude-paths:
     - "infrastructure/*"
   base-directory: _site
-    
