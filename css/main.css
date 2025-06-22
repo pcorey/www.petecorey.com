@@ -36,7 +36,7 @@ a {
     color: #5500FF;
     color: #0055FF;
     color: #FF0055;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 blockquote {
@@ -120,7 +120,7 @@ a > code .token {
 :not(pre) > code, pre {
     background: #f8f8f8;
     overflow: auto;
-    color: #666;
+    color: #FF0055;
 }
 
 .margin {
