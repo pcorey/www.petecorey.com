@@ -86,7 +86,7 @@ The list of natural notes returned by `Glorious.Note.get_notes/1` may not match 
 ```
 naturalized_root = Glorious.Note.naturalize(root)
 natural_index = Enum.find_index(spelling, &(&1 == naturalized_root))
-ordered_spelling = Glorious.Combinatorics.rotate(spelling, natural_index)
+ordered_spelling = Glorious.Enum.rotate(spelling, natural_index)
 ```
 
 `Glorious.Note.naturalize/1` un-alters a note and returns the natural note it was derived from:
