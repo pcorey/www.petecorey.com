@@ -125,8 +125,8 @@ a > code .token {
 
 .margin {
     margin: 0 auto;
-    max-width: 80ch;
-    width: 80ch;
+    max-width: 60ch;
+    width: 60ch;
 }
 
 .signup-form {
