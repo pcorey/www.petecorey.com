@@ -1,54 +1,60 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    {% if page.title %}
-        <title>Pete Corey - {{page.title}}</title>
-    {% else %}
-        <title>Pete Corey</title>
-    {% endif  %}
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  {% if page.title %}
+  <title>Pete Corey - {{page.title}}</title>
+  {% else %}
+  <title>Pete Corey</title>
+  {% endif %} {% seo %} {% feed_meta %}
 
-    {% seo %}
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="robots" content="index,follow" />
+  <meta
+    name="google-site-verification"
+    content="ut-g0UTIu8DWrEtUvWSXrVlCq1exF4YD54ANC-c9rsk"
+  />
+  <link rel="icon" type="image/png" href="{{ "/img/favicon.png?version=04172019"
+  | prepend: site.baseurl }}"> {% if page.words %}
+  <meta name="words" content="{{page.words}}" />
+  {% endif %}
 
-    {% feed_meta %}
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ "/css/normalize.css?version=04172019" |
+  prepend: site.baseurl }}">
+  <!-- <link rel="stylesheet" href="{{ "/css/prism.css?version=04172019" | prepend: site.baseurl }}"> -->
+  <link rel="stylesheet" href="{{ "/css/main.css?version=04172019" | prepend:
+  site.baseurl }}">
 
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
-    <meta name="robots" content="index,follow">
-    <meta name="google-site-verification" content="ut-g0UTIu8DWrEtUvWSXrVlCq1exF4YD54ANC-c9rsk" />
-    <link rel="icon" type="image/png" href="{{ "/img/favicon.png?version=04172019" | prepend: site.baseurl }}">
+  <!-- <script src="{{ '/js/prism.js' | prepend: site.baseurl }}"></script> -->
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="{{ '/js/bigtext.js' | prepend: site.baseurl }}"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/rte6ieu.css" />
+  <script src="{{ '/js/feather.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/js/condition-field.min.js' | prepend: site.baseurl }}"></script>
 
-    {% if page.words %}
-        <meta name="words" content="{{page.words}}">
-    {% endif  %}
+  <script>
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/normalize.css?version=04172019" | prepend: site.baseurl }}">
-    <!-- <link rel="stylesheet" href="{{ "/css/prism.css?version=04172019" | prepend: site.baseurl }}"> -->
-    <link rel="stylesheet" href="{{ "/css/main.css?version=04172019" | prepend: site.baseurl }}">
+      t._e = [];
+      t.ready = function (f) {
+        t._e.push(f);
+      };
 
-    <!-- <script src="{{ '/js/prism.js' | prepend: site.baseurl }}"></script> -->
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="{{ '/js/bigtext.js' | prepend: site.baseurl }}"></script>
-    <link rel="stylesheet" href="https://use.typekit.net/rte6ieu.css">
-    <script src="{{ '/js/feather.min.js' | prepend: site.baseurl }}"></script>
-    <script src="{{ '/js/condition-field.min.js' | prepend: site.baseurl }}"></script>
-
-    <script>
-     window.twttr = (function(d, s, id) {
-         var js, fjs = d.getElementsByTagName(s)[0],
-             t = window.twttr || {};
-         if (d.getElementById(id)) return t;
-         js = d.createElement(s);
-         js.id = id;
-         js.src = "https://platform.twitter.com/widgets.js";
-         fjs.parentNode.insertBefore(js, fjs);
-
-         t._e = [];
-         t.ready = function(f) {
-             t._e.push(f);
-         };
-
-         return t;
-     }(document, "script", "twitter-wjs"));
-    </script>
+      return t;
+    })(document, "script", "twitter-wjs");
+  </script>
+  <script
+    defer
+    src="https://cloud.umami.is/script.js"
+    data-website-id="8d1dd010-9954-4362-a98d-ad3b8d1562f5"
+  ></script>
 </head>
