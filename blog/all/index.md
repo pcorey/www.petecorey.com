@@ -1,23 +1,14 @@
 ---
-layout: page
+layout: default
 ---
 
 <div class="blog-all content">
 
   <div class="margin">
       <header class="post-header" >
-          <h1>Hello!</h1>
+          <h1>The Archives</h1>
       </header>
-      <p style="">Hi, I'm Pete Corey. I'm a software developer and owner of
-      East5th, Inc. I've been working in the software industry since 2008. I've
-      worked in various capacities for various different companies like Amazon,
-      Tapestry Solutions, and Cigital. In 2015 I started working for myself,
-      and these days I find myself largely writing back-end software solutions
-      using Elixir and Node.js.</p>
-      <p>I enjoy writing about what I know. Everything on this page was written
-      entirely by me without AI assistance. Here's a sampling of some of my
-      recent posts:</p>
-      {% for post in site.posts limit: 3 %}
+      {% for post in site.posts %}
         <div class="post-content">
             <p>
                 <a href="{{post.url}}" >{{post.title}}</a>
@@ -36,4 +27,3 @@ layout: page
   </div>
 
 </div>
-
